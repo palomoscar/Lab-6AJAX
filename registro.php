@@ -1,19 +1,12 @@
 <?php
 
-
+	//include("./conexionbd.php");
 	//conexion remota
-	//$conexion = mysqli_connect("mysql.hostinger.es","u204349316_root","gabriel3","u204349316_users") or die( mysql_error() );
+	$conexion = mysqli_connect("mysql.hostinger.es","u204349316_root","gabriel3","u204349316_users") or die( mysql_error() );
 		
 	//conexion local
-	 $conexion = mysqli_connect("localhost","root",'',"usuario") or die( mysql_error() );
-		
- 
-	if(!$conexion){
-		
-		echo "Fallo al conectar con MySQL : " . $conexion->connect_error;
-		
-	}
-	
+	//$conexion = mysqli_connect("localhost","root",'',"usuario") or die( mysql_error() );
+
 	//extraemos los valores introducidos y los guardamos en variables para trabajar mas facil
 	
 		$nombre = $_POST['nombre'];
